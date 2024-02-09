@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +7,11 @@
     <link rel="icon" type="image/x-icon" href="{{ asset ('frontend/assets/logo.png')}}">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"  rel="stylesheet" />
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css','resources/js/app.js'])
     <title>@yield('title')</title>
 </head>
 <body style="background: rgb(24,111,101);
-background: linear-gradient(180deg, rgba(24,111,101,0.2497373949579832) 0%, rgba(255,255,255,0) 100%);overflow: hidden">
+background: linear-gradient(180deg, rgba(24,111,101,0.2497373949579832) 0%, rgba(255,255,255,0) 100%);overflow-x: hidden">
 
 
     @include('frontend.body.header')
@@ -20,6 +20,7 @@ background: linear-gradient(180deg, rgba(24,111,101,0.2497373949579832) 0%, rgba
         @yield('main')
     </main>
 
+    @include('frontend.body.footer')
 
 
 

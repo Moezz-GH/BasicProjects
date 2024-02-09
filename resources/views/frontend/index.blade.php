@@ -10,6 +10,8 @@
 
 
 @include('frontend.home.home_hero')
+@include('frontend.home.cards')
+@include('frontend.home.banner')
 
 
 
