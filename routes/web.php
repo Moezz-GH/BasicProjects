@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\IndexController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,8 +16,9 @@ use App\Http\Controllers\Frontend\IndexController;
 */
 
 // Route::get('/', function () {
-//     return view('welcome');
+//     return 'reched';
 // });
 
 
-Route::get('/',[IndexController::class,'Index']);
+Route::get('/',[IndexController::class,'index']);
+Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class,'index']);
