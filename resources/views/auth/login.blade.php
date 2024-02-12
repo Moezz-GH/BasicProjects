@@ -6,8 +6,7 @@
 
 @section('main')
 
-    <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
+  
 
 
 <section class="bg-transparent my-10 dark:bg-gray-900" style="margin-top:5%;margin-bottom:5%">
@@ -15,8 +14,10 @@
         <div class="absolute top-0 -right-4 w-72 h-72 bg-teal-500 z-0 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
         <div class="md:visible invisible absolute -bottom-8 left-10 w-72 h-72 bg-teal-800 z-0 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
          
-        <div class="w-full bg-transparent rounded-xl border border-solid border-teal-700  shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+        <div style="background-image: url({{asset('frontend/assets/dotts.png')}});background-size: cover;" class="w-full bg-transparent rounded-xl border border-solid border-teal-700  shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
             <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                  <!-- Session Status -->
+                 <x-auth-session-status class="mb-4" :status="session('status')" />
                 <h1 class="pt-10 text-3xl text-center font-bold leading-tight tracking-tight text-teal-800 md:text-3xl dark:text-white">
                     Sign in
                 </h1>
