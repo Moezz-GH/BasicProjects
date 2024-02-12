@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Frontend\IndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,3 +36,10 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+// Route::get('/', function () {
+//     return 'reched';
+// });
+
+
+Route::get('/',[IndexController::class,'index']);
+Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class,'index']);
