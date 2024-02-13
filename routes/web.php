@@ -22,6 +22,8 @@ Route::get('/', [UserController::class, 'Index'])->name('index');
 
 Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/admin/dashboard', [AdminController::class, 'AdminDashboard'])->name('admin.dashboard');
+    Route::get('admin/logout',[AdminController::class,'AdminDestroy'])->name('admin.logout');
+
 });
 
 Route::middleware(['auth', 'role:user'])->group(function () {
