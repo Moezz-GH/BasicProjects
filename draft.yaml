@@ -1,0 +1,38 @@
+models: 
+ 
+ Events:
+  title: string
+  description: text
+  location: string
+  date: date
+  time: time
+  capacity: int
+  price: decimal
+  relationships:
+   belongsTo: Categories
+   hasMany: EventImages
+
+
+ Categories:
+   name: string
+   image: string
+
+ EventImages:
+  eventimage: string
+ 
+
+
+
+ Participants:
+  registration_date: datetime
+  relationships:
+   hasMany: User
+   belongsTo: Events
+
+ Reviews:
+  rating: int
+  comment: text
+  date: date
+  relationships:
+   belongsTo: Events
+   hasMany: User

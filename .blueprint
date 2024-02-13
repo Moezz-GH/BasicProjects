@@ -1,0 +1,22 @@
+created:
+    - database/factories/EventsFactory.php
+    - database/factories/CategoriesFactory.php
+    - database/factories/EventImagesFactory.php
+    - database/factories/ParticipantsFactory.php
+    - database/factories/ReviewsFactory.php
+    - database/migrations/2024_02_13_002521_create_events_table.php
+    - database/migrations/2024_02_13_002522_create_categories_table.php
+    - database/migrations/2024_02_13_002523_create_event_images_table.php
+    - database/migrations/2024_02_13_002524_create_participants_table.php
+    - database/migrations/2024_02_13_002525_create_reviews_table.php
+    - app/Models/Events.php
+    - app/Models/Categories.php
+    - app/Models/EventImages.php
+    - app/Models/Participants.php
+    - app/Models/Reviews.php
+models:
+    Events: { title: string, description: text, location: string, date: date, time: time, capacity: int, price: decimal, relationships: { belongsTo: Categories, hasMany: EventImages } }
+    Categories: { name: string, image: string }
+    EventImages: { eventimage: string }
+    Participants: { registration_date: datetime, relationships: { hasMany: User, belongsTo: Events } }
+    Reviews: { rating: int, comment: text, date: date, relationships: { belongsTo: Events, hasMany: User } }
