@@ -23,6 +23,9 @@ Route::get('/', [UserController::class, 'Index'])->name('index');
 Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/admin/dashboard', [AdminController::class, 'AdminDashboard'])->name('admin.dashboard');
     Route::get('admin/logout',[AdminController::class,'AdminDestroy'])->name('admin.logout');
+    Route::get('admin/profile',[AdminController::class,'Profile'])->name('admin.profile');
+    Route::get('admin/edit/profile',[AdminController::class,'EditProfile'])->name('edit.profile');
+    Route::post('admin/store/profile',[AdminController::class,'StoreProfile'])->name('store.profile');
 
 });
 
