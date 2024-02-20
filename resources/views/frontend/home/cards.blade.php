@@ -7,7 +7,7 @@
                 but the majority have suffered alteration in some form.</p>
         </div>
 
-        <div class="space-y-2 grid grid-cols-1 lg:grid-cols-3 gap-8 md:space-y-0" style="align-items: center">     
+        <div class="space-y-2 grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8 md:space-y-0" style="align-items: center">     
             <div class="h-80 bg-cover relative bg-center bg-no-repeat text-center max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"style="background-image: url('https://images.unsplash.com/photo-1559521783-1d1599583485?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); ">
                 <div class="h-80 bg-cover relative bg-center bg-no-repeat text-center max-w-sm rounded-lg "style="background: rgb(0,0,0);
                 background: linear-gradient(180deg, rgba(0,0,0,0.2497373949579832) 0%, rgba(10,9,9,0.8) 100%);">
