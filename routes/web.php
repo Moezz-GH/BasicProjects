@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\frontend\AboutController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -18,6 +19,8 @@ use App\Http\Controllers\Frontend\IndexController;
 */
 
 Route::get('/', [UserController::class, 'Index'])->name('index');
+
+Route::get('/about', [AboutController::class, 'index'])->name('frontend.about');
 
 
 Route::middleware(['auth', 'role:admin'])->group(function () {
