@@ -1,6 +1,8 @@
 @extends('frontend.master_dashboard')
 
-
+@section('title')
+    OasisQuest - About us
+@endsection
 
 @section('main')
 
