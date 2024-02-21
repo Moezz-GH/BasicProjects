@@ -3,8 +3,8 @@
         <div class="mr-auto place-self-center lg:col-span-7">
         <div class="absolute top-0 -right-4 w-72 h-72 bg-teal-500 z-0 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
         <div class="md:visible invisible absolute -bottom-8 left-60 w-72 h-72 bg-teal-800 z-0 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
-            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-gray-900 dark:text-white">Discover and Explore Our <span class="text-primary-800"> Country </span> Like Never Before</h1>
-            <p class="max-w-2xl mb-6 font-light text-gray-800 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-800">Embark on an Unforgettable Journey Through Our Nation's Untamed Wonders.</p>
+            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-gray-900 dark:text-white">The platform for  <span class="text-primary-800"> people </span>where friendships grow out of interests</h1>
+            <p class="max-w-2xl mb-6 font-light text-gray-800 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-800">Thousands of people on OasisQuest share a wide range of interests, from networking and skill sharing to hiking and reading.</p>
             <div class="flex mt-16">
                 <a href="#" class="transition ease-in-out delay-150 hover:-translate-y-1 duration-300 z-10 inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
                     Get started

@@ -7,6 +7,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\IndexController;
+use App\Http\Controllers\Frontend\ReservationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,8 @@ Route::get('/', [UserController::class, 'Index'])->name('index');
 Route::get('/about', [AboutController::class, 'index'])->name('frontend.about');
 
 Route::get('/contact_us', [ContactController::class, 'index'])->name('frontend.contact');
+
+Route::get('/reservation', [ReservationController::class, 'Reservation'])->name('reservation');
 
 
 Route::middleware(['auth', 'role:admin'])->group(function () {
