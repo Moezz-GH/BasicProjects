@@ -28,6 +28,10 @@ Route::get('/contact_us', [ContactController::class, 'index'])->name('frontend.c
 
 Route::get('/reservation', [ReservationController::class, 'Reservation'])->name('reservation');
 
+Route::get('/events' , [\App\Http\Controllers\EventController::class, 'Events'])->name('events');
+
+Route::get('/details' , [\App\Http\Controllers\DetailController::class, 'Details'])->name('details');
+
 
 Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/admin/dashboard', [AdminController::class, 'AdminDashboard'])->name('admin.dashboard');
