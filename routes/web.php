@@ -44,6 +44,8 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 
 Route::middleware(['auth', 'role:user'])->group(function () {
     Route::get('/dashboard', [UserController::class, 'Profile'])->name('dashboard');
+    Route::get('/payment', [UserController::class, 'Checkout'])->name('checkout');
+    Route::get('/payment/done', [UserController::class, 'CheckoutDone'])->name('checkout.done');
 });
 
 

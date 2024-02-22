@@ -46,6 +46,12 @@ background: linear-gradient(180deg, rgba(24,111,101,0.2497373949579832) 0%, rgba
 };
       </script>
 
+      <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+  document.getElementById('payButton').click();
+});
+      </script>
+
       
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
